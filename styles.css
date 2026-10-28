@@ -73,3 +73,7 @@ dialog#lightbox::backdrop{background:rgba(5,6,8,.82)}
 dialog#lightbox img{display:block;width:100%;height:auto}
 .lb-close{position:sticky;top:8px;float:right;margin:8px 8px -48px 0;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#15181d;color:var(--fg);font-size:20px;line-height:1;cursor:pointer;z-index:1}
 @media (prefers-reduced-motion:reduce){.zoom{transition:none}}
+
+/* galerías con más de 2 capturas: asomar la siguiente para indicar scroll */
+@media(min-width:768px){.gallery:has(li:nth-child(3)){grid-auto-columns:46%}}
+.links .note{font-size:.85em;opacity:.7}
