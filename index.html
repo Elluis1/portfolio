@@ -22,36 +22,60 @@
 </head>
 <body>
 <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+<nav class="sidenav" aria-label="Navegación" data-i18n-aria="navLabel"><ul>
+<li><a class="sn-btn" href="#inicio" aria-label="Inicio" data-i18n-aria="nH"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg><span class="tip" aria-hidden="true" data-i18n="nH">Inicio</span></a></li>
+<li><a class="sn-btn" href="#proyectos" aria-label="Proyectos" data-i18n-aria="nP"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span class="tip" aria-hidden="true" data-i18n="nP">Proyectos</span></a></li>
+<li><a class="sn-btn" href="#stack" aria-label="Stack" data-i18n-aria="nS"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg><span class="tip" aria-hidden="true" data-i18n="nS">Stack</span></a></li>
+<li><a class="sn-btn" href="#sobre-mi" aria-label="Sobre mí" data-i18n-aria="nA"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span class="tip" aria-hidden="true" data-i18n="nA">Sobre mí</span></a></li>
+<li><a class="sn-btn" href="#contacto" aria-label="Contacto" data-i18n-aria="nC"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span class="tip" aria-hidden="true" data-i18n="nC">Contacto</span></a></li>
+<li class="sep" aria-hidden="true"></li>
+<li><a class="sn-btn cv-link" href="cv/Curriculum-Vitae-Luigi-Mete.pdf" aria-label="Descargar CV" data-i18n-aria="nCv" download><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h8"/></svg><span class="tip" aria-hidden="true" data-i18n="nCv">Descargar CV</span></a></li>
+<li><a class="sn-btn" href="https://github.com/Elluis1" aria-label="GitHub" data-i18n-aria="nGh" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg><span class="tip" aria-hidden="true" data-i18n="nGh">GitHub</span></a></li>
+<li><a class="sn-btn" href="https://www.linkedin.com/in/luigi-mete-38b3961b3/" aria-label="LinkedIn" data-i18n-aria="nLi" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><span class="tip" aria-hidden="true" data-i18n="nLi">LinkedIn</span></a></li>
+</ul></nav>
 <div class="wrap">
 <header>
-  <a class="logo" href="#top">luigi-mete</a>
+  <a class="logo" href="#inicio">luigi-mete</a>
   <div class="right">
-    <nav aria-label="Secciones"><a href="#proyectos" data-i18n="navP">proyectos</a><a href="#stack" data-i18n="navS">stack</a><a href="#sobre-mi" data-i18n="navA">sobre mí</a><a href="#contacto" data-i18n="navC">contacto</a></nav>
     <div class="lang" role="group" aria-label="Idioma"><button type="button" data-lang="es" aria-pressed="true" lang="es">ES</button><button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button></div>
   </div>
 </header>
 <main id="main">
-<div class="hero" id="top">
+<div class="hero" id="inicio">
   <p class="prompt mono" aria-hidden="true"><span>$</span> whoami</p>
   <h1>Luigi Mete<span class="cur" aria-hidden="true"></span></h1>
   <p class="role" data-i18n="role">Estudiante de Lic. en Sistemas / Analista en Sistemas</p>
   <p class="loc" data-i18n="loc">5.º año · FCyT UADER · Concepción del Uruguay, Entre Ríos</p>
   <div class="cta">
     <a class="btn primary" href="#proyectos" data-i18n="ctaP">ver proyectos</a>
-    <a class="btn sec" id="cv" href="cv/Curriculum-Vitae-Luigi-Mete.pdf" download data-i18n="ctaCv">descargar CV</a>
+    <a class="btn sec cv-link" id="cv" href="cv/Curriculum-Vitae-Luigi-Mete.pdf" download data-i18n="ctaCv">descargar CV</a>
     <a class="btn sec" href="#contacto" data-i18n="ctaC">contacto</a>
   </div>
 </div>
 <section id="proyectos" aria-labelledby="h-p"><h2 id="h-p" data-i18n="hP">proyectos</h2>
-  <article class="proj"><h3>Savedeco</h3>
+  <article class="proj"><figure class="shot"><button type="button" class="zoom" data-full="img/savedeco.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/savedeco.webp" width="1200" height="655" loading="lazy" decoding="async" alt="Captura de Savedeco: panel “Resumen de la partida” con los datos decodificados de una partida de ejemplo, en tarjetas." data-i18n-alt="altSd"></button></figure>
+    <h3>Savedeco</h3>
     <p data-i18n="sd">Visor web que decodifica partidas guardadas de juegos y muestra su contenido en paneles.</p>
     <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Actions</li><li>Netlify</li></ul>
     <div class="links"><a href="https://github.com/Elluis1/savedeco" rel="noopener"><span data-i18n="repo">repo ↗</span></a></div>
   </article>
-  <article class="proj"><h3>Comgen</h3>
+  <article class="proj"><figure class="shot"><button type="button" class="zoom" data-full="img/comgen.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/comgen.webp" width="1200" height="972" loading="lazy" decoding="async" alt="Captura de Comgen: a la izquierda el enunciado “Cadenas binarias que terminan en 01”; a la derecha el autómata finito determinista generado, con su definición y su diagrama de estados." data-i18n-alt="altCg"></button></figure>
+    <h3>Comgen</h3>
     <p data-i18n="cg">Genera autómatas a partir de enunciados en español y los exporta a JFLAP.</p>
     <ul class="chips"><li>Python</li><li>FastAPI</li><li>Ollama</li><li>pytest</li></ul>
   </article>
+
+  <!-- Slot para próximas tarjetas (SmileTracker, Stock-viewer). El <template> no se muestra: copiar su contenido arriba cuando haya datos reales. -->
+  <template id="proj-slot">
+    <article class="proj">
+      <figure class="shot"><button type="button" class="zoom" data-full="img/NOMBRE.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/NOMBRE.webp" width="1200" height="700" loading="lazy" decoding="async" alt="" data-i18n-alt="altNOMBRE"></button></figure>
+      <h3>NOMBRE</h3>
+      <p data-i18n="descNOMBRE"></p>
+      <ul class="chips"></ul>
+      <div class="links"></div>
+    </article>
+  </template>
 </section>
 <section id="stack" aria-labelledby="h-s"><h2 id="h-s" data-i18n="hS">stack</h2>
   <dl><dt data-i18n="sL">lenguajes</dt><dd>TypeScript, JavaScript, Python, C++</dd>
@@ -67,6 +91,7 @@
   <dt>linkedin</dt><dd><a href="https://www.linkedin.com/in/luigi-mete-38b3961b3/" rel="noopener">linkedin.com/in/luigi-mete-38b3961b3</a></dd></dl>
 </section>
 </main>
+<dialog id="lightbox" aria-label="Captura ampliada"><button type="button" class="lb-close" aria-label="Cerrar" data-i18n-aria="close">×</button><img alt=""></dialog>
 <footer>© 2026 Luigi Mete</footer>
 </div>
 </body>
