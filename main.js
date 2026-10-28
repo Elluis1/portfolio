@@ -8,7 +8,7 @@
       cg:"Genera autómatas a partir de enunciados en español y los exporta a JFLAP.",
       st:"App de escritorio para consultorios odontológicos: pacientes, agenda de turnos integrada con Google Calendar, ficha clínica con tratamientos y pagos, y odontograma con funciones por voz.",sv:"App de stock por empresa: inventario de productos, registro de ventas, compras y ajustes en un libro diario, y resumen mensual y anual con balance y productos más vendidos.",priv:"código privado",altSt1:"SmileTracker: panel de trabajo con pacientes, turnos del día y calendario",altSt2:"SmileTracker: agenda semanal de turnos conectada a Google Calendar",altSt3:"SmileTracker: ficha clínica con tratamientos, pagos y saldo pendiente",altSt4:"SmileTracker: odontograma con controles de micrófono para dictado por voz",altSv1:"Stock-viewer: inventario de productos con datos de ejemplo",altSv2:"Stock-viewer: libro diario de ventas, compras y ajustes con datos de ejemplo",altSv3:"Stock-viewer: resumen mensual y anual con productos más vendidos, datos de ejemplo",
       kEd:"estudios",vEd:"Lic. en Sistemas · FCyT UADER · 5.º año",kTi:"título",vTi:"Analista en Sistemas",kLo:"ubicación",vLo:"Concepción del Uruguay, Entre Ríos",kEn:"inglés",kPr:"proyectos",
-      repo:"repo ↗",hS:"stack",sL:"lenguajes",hA:"sobre mí",
+      repo:"repo ↗",live:"ver sitio ↗",hS:"stack",sL:"lenguajes",hA:"sobre mí",
       a1:"Lic. en Sistemas — FCyT UADER, 5.º año (en curso)",a2:"Título intermedio: Analista en Sistemas",a3:"Inglés B1",hC:"contacto",
       cv:"cv/Curriculum-Vitae-Luigi-Mete.pdf",langLabel:"Idioma"},
     en:{title:"Luigi Mete — Information Systems student",desc:"Portfolio of Luigi Mete, 5th-year Information Systems (Lic. en Sistemas) student at FCyT UADER and Systems Analyst.",
@@ -19,7 +19,7 @@
       cg:"Generates automata from problem statements written in Spanish and exports them to JFLAP.",
       st:"Desktop app for dental offices: patients, an appointment schedule integrated with Google Calendar, clinical records with treatments and payments, and a dental chart with voice features.",sv:"Per-company stock app: product inventory, a daily log of sales, purchases and adjustments, and monthly and yearly summaries with balance and best-selling products.",priv:"closed source",altSt1:"SmileTracker: dashboard with patients, today’s appointments and calendar",altSt2:"SmileTracker: weekly appointment schedule connected to Google Calendar",altSt3:"SmileTracker: clinical record with treatments, payments and pending balance",altSt4:"SmileTracker: dental chart with microphone controls for voice dictation",altSv1:"Stock-viewer: product inventory with sample data",altSv2:"Stock-viewer: daily log of sales, purchases and adjustments with sample data",altSv3:"Stock-viewer: monthly and yearly summary with best-selling products, sample data",
       kEd:"studies",vEd:"Information Systems (Lic. en Sistemas) · FCyT UADER · 5th year",kTi:"degree",vTi:"Systems Analyst",kLo:"location",vLo:"Concepción del Uruguay, Entre Ríos, Argentina",kEn:"english",kPr:"projects",
-      repo:"repo ↗",hS:"stack",sL:"languages",hA:"about",
+      repo:"repo ↗",live:"live site ↗",hS:"stack",sL:"languages",hA:"about",
       a1:"Information Systems degree (Lic. en Sistemas) — FCyT UADER, 5th year (in progress)",a2:"Intermediate degree: Systems Analyst (Analista en Sistemas)",a3:"English B1",hC:"contact",
       cv:"cv/CV-Luigi-Mete-English.pdf",langLabel:"Language"}
   };
