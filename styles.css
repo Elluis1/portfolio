@@ -60,12 +60,14 @@ footer{padding:36px 0 70px;color:var(--dim);font-size:13px;border-top:1px solid 
 }
 @media (prefers-reduced-motion:reduce){.sn-btn,.tip{transition:none}}
 
-/* capturas de proyectos */
-.shot{margin:0 0 20px}
-.zoom{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#15181d;cursor:zoom-in;transition:border-color .15s}
-.zoom:hover{border-color:#3a3f47}
-.zoom img{display:block;width:100%;height:auto}
-.proj+.proj{padding-top:40px}
+/* capturas de proyectos: galería que escala a carrusel */
+.gallery{list-style:none;margin:16px 0 18px;padding:0 0 4px;display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 12px)/2);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.gallery li{scroll-snap-align:start;min-width:0}
+.zoom{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#15181d;cursor:zoom-in;transition:border-color .15s}
+.zoom:hover,.zoom:focus-visible{border-color:#3a3f47}
+.zoom:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.zoom img{display:block;width:100%;height:auto;aspect-ratio:20/11;object-fit:cover;object-position:top center}
+@media(max-width:767px){.gallery{grid-auto-columns:82%}}
 dialog#lightbox{padding:0;border:1px solid var(--line);border-radius:10px;background:var(--bg);max-width:min(1200px,94vw);max-height:92vh;overflow:auto}
 dialog#lightbox::backdrop{background:rgba(5,6,8,.82)}
 dialog#lightbox img{display:block;width:100%;height:auto}
