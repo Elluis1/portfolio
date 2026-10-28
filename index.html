@@ -17,8 +17,8 @@
 <meta property="og:locale" content="es_AR">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="styles.css?v=3">
-<script src="main.js?v=3" defer></script>
+<link rel="stylesheet" href="styles.css?v=4">
+<script src="main.js?v=4" defer></script>
 </head>
 <body>
 <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
@@ -43,6 +43,7 @@
 </header>
 <main id="main">
 <div class="hero" id="inicio">
+ <div class="hero-main">
   <p class="prompt mono" aria-hidden="true"><span>$</span> whoami</p>
   <h1>Luigi Mete<span class="cur" aria-hidden="true"></span></h1>
   <p class="role" data-i18n="role">Estudiante de Lic. en Sistemas / Analista en Sistemas</p>
@@ -52,30 +53,44 @@
     <a class="btn sec cv-link" id="cv" href="cv/Curriculum-Vitae-Luigi-Mete.pdf" download data-i18n="ctaCv">descargar CV</a>
     <a class="btn sec" href="#contacto" data-i18n="ctaC">contacto</a>
   </div>
+ </div>
+ <div class="term" role="group" aria-label="about.txt">
+  <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>~/luigi-mete</span></div>
+  <div class="term-body mono">
+   <p class="prompt"><span>$</span> cat about.txt</p>
+   <dl class="kv"><dt data-i18n="kEd">estudios</dt><dd data-i18n="vEd">Lic. en Sistemas · FCyT UADER · 5.º año</dd>
+   <dt data-i18n="kTi">título</dt><dd data-i18n="vTi">Analista en Sistemas</dd>
+   <dt data-i18n="kLo">ubicación</dt><dd data-i18n="vLo">Concepción del Uruguay, Entre Ríos</dd>
+   <dt data-i18n="kEn">inglés</dt><dd>B1</dd>
+   <dt>stack</dt><dd>TypeScript · Python · React · Django · FastAPI</dd></dl>
+   <p class="prompt"><span>$</span> ls <span data-i18n="kPr">proyectos</span>/</p>
+   <p class="ls"><a href="#p-savedeco">savedeco/</a> <a href="#p-comgen">comgen/</a> <a href="#p-smiletracker">smiletracker/</a> <a href="#p-stock-viewer">stock-viewer/</a></p>
+  </div>
+ </div>
 </div>
-<section id="proyectos" aria-labelledby="h-p"><h2 id="h-p" data-i18n="hP">proyectos</h2>
-  <article class="proj">
+<section id="proyectos" class="v-grid" aria-labelledby="h-p"><h2 id="h-p" data-i18n="hP">proyectos</h2>
+  <article class="proj" id="p-savedeco">
     <h3>Savedeco</h3>
     <p data-i18n="sd">Visor web que decodifica partidas guardadas de juegos y muestra su contenido en paneles.</p>
     <ul class="gallery" aria-label="Capturas" data-i18n-aria="shots"><li><button type="button" class="zoom" data-full="img/savedeco-carga.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/savedeco-carga.webp" width="1200" height="699" loading="lazy" decoding="async" alt="Savedeco, pantalla de carga: el código de exportación de una partida de ejemplo pegado en el campo de texto, con los botones Subir archivo y Decodificar." data-i18n-alt="altSd1"></button></li><li><button type="button" class="zoom" data-full="img/savedeco-resumen.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/savedeco-resumen.webp" width="1200" height="655" loading="lazy" decoding="async" alt="Savedeco, resultados: panel “Resumen de la partida” con los datos decodificados de la partida de ejemplo, en tarjetas." data-i18n-alt="altSd2"></button></li></ul>
     <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Actions</li><li>Netlify</li></ul>
     <div class="links"><a href="https://github.com/Elluis1/savedeco" rel="noopener"><span data-i18n="repo">repo ↗</span></a></div>
   </article>
-  <article class="proj">
+  <article class="proj" id="p-comgen">
     <h3>Comgen</h3>
     <p data-i18n="cg">Genera autómatas a partir de enunciados en español y los exporta a JFLAP.</p>
     <ul class="gallery" aria-label="Capturas" data-i18n-aria="shots"><li><button type="button" class="zoom" data-full="img/comgen-enunciado.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/comgen-enunciado.webp" width="1200" height="972" loading="lazy" decoding="async" alt="Comgen en modo oscuro: a la izquierda el enunciado “Cadenas binarias que terminan en 01”; a la derecha el autómata finito determinista generado, con su definición y su diagrama de estados." data-i18n-alt="altCg1"></button></li><li><button type="button" class="zoom" data-full="img/comgen-diagrama.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/comgen-diagrama.webp" width="1184" height="1016" loading="lazy" decoding="async" alt="Comgen, diagrama en primer plano: autómata de dos estados para “cantidad par de unos”, con su tabla de transiciones." data-i18n-alt="altCg2"></button></li></ul>
     <ul class="chips"><li>Python</li><li>FastAPI</li><li>Ollama</li><li>pytest</li></ul>
   </article>
 
-  <article class="proj">
+  <article class="proj" id="p-smiletracker">
     <h3>SmileTracker</h3>
     <p data-i18n="st">App de escritorio para consultorios odontológicos: pacientes, agenda de turnos integrada con Google Calendar, ficha clínica con tratamientos y pagos, y odontograma con funciones por voz.</p>
     <ul class="gallery" aria-label="Capturas" data-i18n-aria="shots"><li><button type="button" class="zoom" data-full="img/smiletracker-panel.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/smiletracker-panel.webp" width="1200" height="646" loading="lazy" decoding="async" alt="SmileTracker: panel de trabajo con pacientes, turnos del día y calendario" data-i18n-alt="altSt1"></button></li><li><button type="button" class="zoom" data-full="img/smiletracker-agenda.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/smiletracker-agenda.webp" width="1200" height="657" loading="lazy" decoding="async" alt="SmileTracker: agenda semanal de turnos conectada a Google Calendar" data-i18n-alt="altSt2"></button></li><li><button type="button" class="zoom" data-full="img/smiletracker-ficha.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/smiletracker-ficha.webp" width="1200" height="775" loading="lazy" decoding="async" alt="SmileTracker: ficha clínica con tratamientos, pagos y saldo pendiente" data-i18n-alt="altSt3"></button></li><li><button type="button" class="zoom" data-full="img/smiletracker-odontograma.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/smiletracker-odontograma.webp" width="1200" height="736" loading="lazy" decoding="async" alt="SmileTracker: odontograma con controles de micrófono para dictado por voz" data-i18n-alt="altSt4"></button></li></ul>
     <ul class="chips"><li>Angular</li><li>Django</li><li>PostgreSQL</li><li>Vosk</li><li>Google Calendar API</li></ul>
     <div class="links"><span class="note" data-i18n="priv">código privado</span></div>
   </article>
-  <article class="proj">
+  <article class="proj" id="p-stock-viewer">
     <h3>Stock-viewer</h3>
     <p data-i18n="sv">App de stock por empresa: inventario de productos, registro de ventas, compras y ajustes en un libro diario, y resumen mensual y anual con balance y productos más vendidos.</p>
     <ul class="gallery" aria-label="Capturas" data-i18n-aria="shots"><li><button type="button" class="zoom" data-full="img/stockviewer-inventario.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/stockviewer-inventario.webp" width="1200" height="938" loading="lazy" decoding="async" alt="Stock-viewer: inventario de productos con datos de ejemplo" data-i18n-alt="altSv1"></button></li><li><button type="button" class="zoom" data-full="img/stockviewer-movimientos.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/stockviewer-movimientos.webp" width="1200" height="872" loading="lazy" decoding="async" alt="Stock-viewer: libro diario de ventas, compras y ajustes con datos de ejemplo" data-i18n-alt="altSv2"></button></li><li><button type="button" class="zoom" data-full="img/stockviewer-resumen.webp" aria-label="Ampliar captura" data-i18n-aria="zoom"><img src="img/stockviewer-resumen.webp" width="1200" height="909" loading="lazy" decoding="async" alt="Stock-viewer: resumen mensual y anual con productos más vendidos, datos de ejemplo" data-i18n-alt="altSv3"></button></li></ul>
@@ -98,10 +113,11 @@
   </template>
 </section>
 <section id="stack" aria-labelledby="h-s"><h2 id="h-s" data-i18n="hS">stack</h2>
-  <dl><dt data-i18n="sL">lenguajes</dt><dd>TypeScript, JavaScript, Python, C++</dd>
-  <dt>frontend</dt><dd>React, Vite, HTML/CSS</dd>
-  <dt>backend</dt><dd>Django, FastAPI, Redis</dd></dl>
+  <dl class="cols"><div><dt data-i18n="sL">lenguajes</dt><dd>TypeScript, JavaScript, Python, C++</dd></div>
+  <div><dt>frontend</dt><dd>React, Vite, HTML/CSS</dd></div>
+  <div><dt>backend</dt><dd>Django, FastAPI, Redis</dd></div></dl>
 </section>
+<div class="duo">
 <section id="sobre-mi" aria-labelledby="h-a"><h2 id="h-a" data-i18n="hA">sobre mí</h2>
   <ul class="plain"><li data-i18n="a1">Lic. en Sistemas — FCyT UADER, 5.º año (en curso)</li><li data-i18n="a2">Título intermedio: Analista en Sistemas</li><li data-i18n="a3">Inglés B1</li></ul>
 </section>
@@ -110,6 +126,7 @@
   <dt>github</dt><dd><a href="https://github.com/Elluis1" rel="noopener">github.com/Elluis1</a></dd>
   <dt>linkedin</dt><dd><a href="https://www.linkedin.com/in/luigi-mete-38b3961b3/" rel="noopener">linkedin.com/in/luigi-mete-38b3961b3</a></dd></dl>
 </section>
+</div>
 </main>
 <dialog id="lightbox" aria-label="Captura ampliada"><button type="button" class="lb-close" aria-label="Cerrar" data-i18n-aria="close">×</button><img alt=""></dialog>
 <footer>© 2026 Luigi Mete</footer>

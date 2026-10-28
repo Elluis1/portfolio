@@ -7,6 +7,7 @@
       sd:"Visor web que decodifica partidas guardadas de juegos y muestra su contenido en paneles.",
       cg:"Genera autómatas a partir de enunciados en español y los exporta a JFLAP.",
       st:"App de escritorio para consultorios odontológicos: pacientes, agenda de turnos integrada con Google Calendar, ficha clínica con tratamientos y pagos, y odontograma con funciones por voz.",sv:"App de stock por empresa: inventario de productos, registro de ventas, compras y ajustes en un libro diario, y resumen mensual y anual con balance y productos más vendidos.",priv:"código privado",altSt1:"SmileTracker: panel de trabajo con pacientes, turnos del día y calendario",altSt2:"SmileTracker: agenda semanal de turnos conectada a Google Calendar",altSt3:"SmileTracker: ficha clínica con tratamientos, pagos y saldo pendiente",altSt4:"SmileTracker: odontograma con controles de micrófono para dictado por voz",altSv1:"Stock-viewer: inventario de productos con datos de ejemplo",altSv2:"Stock-viewer: libro diario de ventas, compras y ajustes con datos de ejemplo",altSv3:"Stock-viewer: resumen mensual y anual con productos más vendidos, datos de ejemplo",
+      kEd:"estudios",vEd:"Lic. en Sistemas · FCyT UADER · 5.º año",kTi:"título",vTi:"Analista en Sistemas",kLo:"ubicación",vLo:"Concepción del Uruguay, Entre Ríos",kEn:"inglés",kPr:"proyectos",
       repo:"repo ↗",hS:"stack",sL:"lenguajes",hA:"sobre mí",
       a1:"Lic. en Sistemas — FCyT UADER, 5.º año (en curso)",a2:"Título intermedio: Analista en Sistemas",a3:"Inglés B1",hC:"contacto",
       cv:"cv/Curriculum-Vitae-Luigi-Mete.pdf",langLabel:"Idioma"},
@@ -17,6 +18,7 @@
       sd:"Web viewer that decodes game save files and shows their contents in panels.",
       cg:"Generates automata from problem statements written in Spanish and exports them to JFLAP.",
       st:"Desktop app for dental offices: patients, an appointment schedule integrated with Google Calendar, clinical records with treatments and payments, and a dental chart with voice features.",sv:"Per-company stock app: product inventory, a daily log of sales, purchases and adjustments, and monthly and yearly summaries with balance and best-selling products.",priv:"closed source",altSt1:"SmileTracker: dashboard with patients, today’s appointments and calendar",altSt2:"SmileTracker: weekly appointment schedule connected to Google Calendar",altSt3:"SmileTracker: clinical record with treatments, payments and pending balance",altSt4:"SmileTracker: dental chart with microphone controls for voice dictation",altSv1:"Stock-viewer: product inventory with sample data",altSv2:"Stock-viewer: daily log of sales, purchases and adjustments with sample data",altSv3:"Stock-viewer: monthly and yearly summary with best-selling products, sample data",
+      kEd:"studies",vEd:"Information Systems (Lic. en Sistemas) · FCyT UADER · 5th year",kTi:"degree",vTi:"Systems Analyst",kLo:"location",vLo:"Concepción del Uruguay, Entre Ríos, Argentina",kEn:"english",kPr:"projects",
       repo:"repo ↗",hS:"stack",sL:"languages",hA:"about",
       a1:"Information Systems degree (Lic. en Sistemas) — FCyT UADER, 5th year (in progress)",a2:"Intermediate degree: Systems Analyst (Analista en Sistemas)",a3:"English B1",hC:"contact",
       cv:"cv/CV-Luigi-Mete-English.pdf",langLabel:"Language"}
@@ -51,9 +53,10 @@
   var links={};document.querySelectorAll('.sidenav a[href^="#"]').forEach(function(a){links[a.getAttribute("href").slice(1)]=a});
   function setActive(id){Object.keys(links).forEach(function(k){if(k===id)links[k].setAttribute("aria-current","true");else links[k].removeAttribute("aria-current")})}
   if("IntersectionObserver" in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)setActive(e.target.id)})},{rootMargin:"-25% 0px -70% 0px"});
+    var lock=0;Object.keys(links).forEach(function(id){links[id].addEventListener("click",function(){setActive(id);lock=Date.now()+1200})});
+    var io=new IntersectionObserver(function(es){if(Date.now()<lock)return;for(var i=0;i<es.length;i++){if(es[i].isIntersecting){setActive(es[i].target.id);break}}},{rootMargin:"-25% 0px -70% 0px"});
     Object.keys(links).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el)});
-    window.addEventListener("scroll",function(){if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-4)setActive("contacto")},{passive:true});
+    window.addEventListener("scroll",function(){if(Date.now()>=lock&&window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-4)setActive("contacto")},{passive:true});
   }
   setActive(location.hash?location.hash.slice(1):"inicio");
 })();
